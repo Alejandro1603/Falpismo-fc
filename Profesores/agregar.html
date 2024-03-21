@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Tarea - Profesor</title>
+    <link rel="stylesheet" href="/assets/css/P_Agregar.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agregar Tarea</h1>
+            <nav>
+                <ul>
+                    <li><a href="/Profesores/profesores.html">Inicio</a></li>
+                    <li><a href="/Profesores/editar.html">Editar Tarea</a></li>
+                    <li><a href="/Profesores/cursos.html">Mis Cursos</a></li>
+                    <li><a href="/inicio.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Agregar Nueva Tarea</h2>
+            <form>
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="description">Descripción:</label>
+                <textarea id="description" name="description" required></textarea>
+                <button type="submit" class="btn">Agregar Tarea</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Classroom. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
