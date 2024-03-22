@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+ }
+ 
+ .container {
+    width: 80%;
+    margin: 0 auto;
+ }
+ 
+ header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ header h1 {
+    margin: 0;
+ }
+ 
+ nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ nav ul li {
+    display: inline;
+    margin-left: 20px;
+ }
+ 
+ nav ul li:first-child {
+    margin-left: 0;
+ }
+ 
+ nav ul li a {
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+ main {
+    padding: 20px 0;
+ }
+ 
+ .assignments {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 40px;
+ }
+ 
+ h2 {
+    color: #333;
+    margin-top: 0;
+ }
+ 
+ .assignment h3 {
+    margin-top: 0;
+ }
+ 
+ .assignment p {
+    color: #666;
+ }
+ 
+ .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+ 
+ .btn:hover {
+    background-color: #0056b3;
+ }
+ 
+ footer {
+   position: fixed; 
+   bottom: 0; 
+   width: 100%; 
+   background-color: #007bff;
+   color: white; 
+   text-align: center;
+   padding: 20px 0; 
+}
+ 
+ 
+ /* Estilos Modales */
+ /*:::Boton-Modal:::*/
+ .boton-modal{
+    padding: 30px;
+    margin-left: 5%;
+    display:flex;
+    
+ }
+ .boton-modal label{
+    padding: 10px 50px;
+    background-color: #5488a3;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+ }
+ .boton-modal label:hover{
+    background-color: #185E83;
+ }
+ /*:::Fin Boton-Modal:::*/
+ 
+ /*:::Ventana Modal:::*/
+ #btn-modal_diseño{
+    display: none;
+  
+ }
+ #btn-modal_biotecnologia{
+    display: none;
+  
+ }
+ #btn-modal_electronica{
+    display: none;
+  
+ }
+ #btn-modal_desarrollo{
+    display: none;
+  
+ }
+ #btn-modal_asistencia{
+    display: none;
+  
+ }
+ #btn-modal_comunicacion{
+    display: none;
+  
+ }
+ #btn-modal_electricidad{
+    display: none;
+  
+ }
+ .container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display:none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border-radius: 10px;
+ }
+ #btn-modal_diseño:checked ~ .container-modal{
+    display: flex;
+ }
+ #btn-modal_biotecnologia:checked ~ .container-modal{
+    display: flex;
+ }
+ #btn-modal_electronica:checked ~ .container-modal{
+    display: flex;
+ }
+ #btn-modal_desarrollo:checked ~ .container-modal{
+    display: flex;
+ }
+ #btn-modal_asistencia:checked ~ .container-modal{
+    display: flex;
+ }
+ #btn-modal_comunicacion:checked ~ .container-modal{
+    display: flex;
+ }
+ #btn-modal_electricidad:checked ~ .container-modal{
+    display: flex;
+ }
+ .content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+ }
+ .content-modal h2{
+    margin-bottom: 15px;
+    color: #2c3e50;
+ }
+ .content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    color: #2c3e50;
+ }
+ .content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+ }
+ .content-modal .btn-cerrar label:hover{
+    background-color:#185E83;
+ }
+ .cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+ }
+ @media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+ }
+ /*:::Fin Ventana Modal:::*/
+ 
+ .lineasContenido {
+    width:100%;
+    height:100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 10px;
+ }
