@@ -13,7 +13,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Sobre nosotros</a></li>
                 <li><a href="index.html">Contactanos</a></li>
                 <li><a href="login.html">Iniciar sesion</a></li>
